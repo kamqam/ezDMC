@@ -170,6 +170,7 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CLIENT_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <AdditionalIncludeDirectories>..\..\ricochet;..\..\ricochet\dlls;..\..\ricochet\cl_dll;..\..\game_shared;..\..\engine;..\..\public;..\..\common;..\..\ricochet\pm_shared;..\..\utils\vgui\include;..\..\external;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -197,6 +198,7 @@ call ..\..\filecopy.bat $(TargetDir)\$(TargetName).pdb ..\..\..\game\mod\cl_dlls
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;CLIENT_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <AdditionalIncludeDirectories>..\..\ricochet;..\..\ricochet\dlls;..\..\ricochet\cl_dll;..\..\game_shared;..\..\engine;..\..\public;..\..\common;..\..\ricochet\pm_shared;..\..\utils\vgui\include;..\..\external;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>

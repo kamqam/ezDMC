@@ -101,7 +101,7 @@ BASE_CFLAGS+=-w
 ifeq ($(OS),Darwin)
 	BASE_CFLAGS += -DOSX -D_OSX -fvisibility=hidden
 else
-	BASE_CFLAGS+= -DLINUX -D_LINUX
+	BASE_CFLAGS+= -DLINUX -D_LINUX -fno-inline
 endif
 
 DEDICATED_CFLAGS="-DDEDICATED -DSWDS"

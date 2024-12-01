@@ -214,11 +214,11 @@ void CHud :: Init( void )
 	CVAR_CREATE( "zoom_sensitivity_ratio", "1.2", FCVAR_ARCHIVE );
 	default_fov = CVAR_CREATE( "default_fov", "90", FCVAR_ARCHIVE );
 	cl_lw = gEngfuncs.pfnGetCvarPointer( "cl_lw" );
-	m_pCvarStealMouse = CVAR_CREATE( "hud_capturemouse", "1", FCVAR_ARCHIVE );
+	m_pCvarStealMouse = CVAR_CREATE( "hud_capturemouse", "0", FCVAR_ARCHIVE );
 	m_pCvarDraw = CVAR_CREATE( "hud_draw", "1", FCVAR_ARCHIVE );
 	/************************ CLIENT CVAR DEFINITIONS ************************/
 	cl_autowepswitch = gEngfuncs.pfnRegisterVariable ( "cl_autowepswitch", "2", FCVAR_USERINFO|FCVAR_ARCHIVE );
-	cl_rollangle = gEngfuncs.pfnRegisterVariable ( "cl_rollangle", "0.65", FCVAR_CLIENTDLL|FCVAR_ARCHIVE );
+	cl_rollangle = gEngfuncs.pfnRegisterVariable ( "cl_rollangle", "0", FCVAR_CLIENTDLL|FCVAR_ARCHIVE );
 	cl_rollspeed = gEngfuncs.pfnRegisterVariable ( "cl_rollspeed", "300", FCVAR_CLIENTDLL|FCVAR_ARCHIVE );
 	cl_fov = gEngfuncs.pfnRegisterVariable ( "cl_fov", "90", FCVAR_USERINFO|FCVAR_ARCHIVE );
 	/************************ CLIENT CVAR DEFINITIONS ************************/
